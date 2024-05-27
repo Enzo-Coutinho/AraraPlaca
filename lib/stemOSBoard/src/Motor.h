@@ -2,6 +2,7 @@
 #define Motor_h
 #include "Arduino.h"
 #include "EncoderESP.h"
+#include "AraraConfig.h"
 
 class Motor {
   public:

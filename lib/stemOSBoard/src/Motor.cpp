@@ -42,26 +42,26 @@ Motor::Motor(int entrada, bool reverse) {
 void Motor::pinos(int entrada) {
   switch (entrada) {
     case Motor::PORTA_1:
-      pinPWMA = 4; 
-      pinPWMB = 13;
+      pinPWMA = MotorInput.PORTA_1[0]; 
+      pinPWMB = MotorInput.PORTA_1[1];
       channelA = 0;
       channelB = 1;
       break;
     case Motor::PORTA_2:
-      pinPWMA = 18;
-      pinPWMB = 19;
+      pinPWMA = MotorInput.PORTA_2[0];
+      pinPWMB = MotorInput.PORTA_2[1];
       channelA = 2;
       channelB = 3;
       break;
     case Motor::PORTA_3:
-      pinPWMA = 23;
-      pinPWMB = 25;
+      pinPWMA = MotorInput.PORTA_3[0];
+      pinPWMB = MotorInput.PORTA_3[1];
       channelA = 4;
       channelB = 5;
       break;
     case Motor::PORTA_4:
-      pinPWMA = 32;
-      pinPWMB = 33;
+      pinPWMA = MotorInput.PORTA_4[0];
+      pinPWMB = MotorInput.PORTA_4[1];
       channelA = 6;
       channelB = 7;
       break;
