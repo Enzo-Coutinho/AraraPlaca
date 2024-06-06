@@ -3,12 +3,11 @@
 /**
  * @brief Cria um objeto da porta analógica
  *
- * @param [in] entrada - define a entrada do sensor analógico
- * @param [in] sensorType - saída ou entrada de dadoss
+ * @param [in] entrada - define a porta do sensor analógico
  * @return N/A.
  */
-Analog::Analog() {
- 
+Analog::Analog(PortasAnalogicas entrada) {
+ AnalogPort = entrada;
 }
 
 
@@ -19,7 +18,7 @@ Analog::Analog() {
  * @return int.
  */
 int Analog::getAnalogInput() {
-  return analogRead(Analog::PORTA_ANALOGICA);
+  return analogRead(AnalogPort);
 }
 
 /**
@@ -29,5 +28,5 @@ int Analog::getAnalogInput() {
  * @return N/A.
  */
 void Analog::setAnalogOutput(int duty) {
-  analogWrite(Analog::PORTA_ANALOGICA, duty);
+  analogWrite(AnalogPort, duty);
 }

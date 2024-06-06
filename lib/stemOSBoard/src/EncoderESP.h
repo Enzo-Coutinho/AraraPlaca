@@ -3,7 +3,13 @@
 #include "Arduino.h"
 #include "ESP32Encoder.h"
 
-// Classe wrapper de encoder
+/**
+* @brief Classe de Encoder.
+*
+* Classe possibilita a leitura de encoder dos motores.
+* 
+*/
+
 class EncoderESP {
   public:
     EncoderESP(int entrada); // Construtor da classe encoder

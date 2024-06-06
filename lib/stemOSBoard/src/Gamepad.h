@@ -3,6 +3,13 @@
 #include <ArduinoJson.h>
 #include "Arduino.h"
 
+/**
+* @brief Classe Gamepad.
+*
+* Classe que obtém os valores do controle utilizado
+* na Driver Station 
+*/
+
 class Gamepad {
   public:
     void applyDeadband(double deadband = 0.01);

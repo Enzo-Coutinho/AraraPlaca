@@ -3,6 +3,13 @@
 #include "Arduino.h"
 #include "EncoderESP.h"
 
+/**
+* @brief Classe de Motor.
+*
+* Classe que possibilita mover o motor
+* 
+*/
+
 class Motor {
   public:
     Motor(int entrada, bool reverse); // Construtor da classe motor
