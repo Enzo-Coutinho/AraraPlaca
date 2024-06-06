@@ -5,6 +5,13 @@
 
 #define WIRE_PORT Wire;
 
+/**
+* @brief Classe IMU.
+*
+* Classe possibilita a leitura do IMU
+* 
+*/
+
 class IMU : public Task {
     public:
         void init(void);

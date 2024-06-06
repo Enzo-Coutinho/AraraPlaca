@@ -2,6 +2,13 @@
 #define ServoOS_h
 #include "Servo.h"
 
+/**
+* @brief Classe Servo.
+*
+* Classe que possibilita a movimentação de servos
+* 
+*/
+
 enum PortaServo {
   PORTA_1_SERVO = 2,
   PORTA_2_SERVO = 26,

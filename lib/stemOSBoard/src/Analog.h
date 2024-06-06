@@ -2,16 +2,28 @@
 #define Analog_h
 #include "Arduino.h"
 
-// Classe utilizada tanto para input como output de dispositivos analógicos
+
+/**
+* @brief Classe para sensores analógicos.
+*
+* Classe que faz o controle da porta analógica da Arara.
+* 
+*/
+
+enum PortasAnalogicas {
+  PORTA_1 = 34,
+  PORTA_2 = 35,
+  PORTA_3 = 36,
+  PORTA_4 = 39,
+  PORTA_5 = 17,
+};
 
 class Analog {
   public:
-    Analog(void);  // Construtor da classe analógica
+    Analog(PortasAnalogicas entrada);  // Construtor da classe analógica
     int getAnalogInput();                             // Obtém uma entrada analógica do sensor acoplado
     void setAnalogOutput(int duty);                   // Define uma saída analógica
-    static const int PORTA_ANALOGICA = 17;            // A única porta de servo na placa
-    static const int SAIDA = 0;                       // Caso for utilizar a porta analógica para saída
-    static const int ENTRADA = 1;                     // Caso for utilizar a porta analógica para entrada
+    int AnalogPort;         
   private:
 };
 

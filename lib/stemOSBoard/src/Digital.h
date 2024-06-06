@@ -8,7 +8,16 @@ enum PortasDigitais {
   PORTA_2 = 35,
   PORTA_3 = 36,
   PORTA_4 = 39,
+  PORTA_5 = 17,
 };
+
+
+/**
+* @brief Classe Digital.
+*
+* Classe que faz o controle da porta digital da Arara.
+* 
+*/
 
 class Digital {
   public:

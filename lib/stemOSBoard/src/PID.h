@@ -3,6 +3,14 @@
 
 #include "Arduino.h"
 
+/**
+* @brief Classe PID.
+*
+* Facilita o uso de um controle PID
+* 
+*/
+
+
 class PID {
     public:
         PID(double p, double i, double d);
